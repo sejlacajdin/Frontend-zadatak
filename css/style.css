@@ -1,0 +1,445 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face{
+font-family: SF Pro Display Semibold;
+src: url("../fonts/sf_prodisplay_Semibold.ttf");
+}
+@font-face{
+    font-family: SF Pro Display Regular;
+    src: url("../fonts/sf_prodisplay_regular.ttf");
+    }
+@font-face{
+   font-family: SF Pro Display Light;
+  src: url("../fonts/sf_prodisplay_light.ttf");
+ }
+ @font-face{
+     font-family: SF Pro Display Medium;
+   src: url("../fonts/sf_prodisplay_medium.ttf");
+  }
+#wrapper{
+    width: 100%;
+    height: 1671px;
+    background-color: #f4fafa;
+    font-family: SF Pro Display Semibold;
+}
+#wrapper__top{
+    width: 100%;
+    height: 891px;
+    background-image: url("../img/Background_Image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav{
+    padding-top:40px;
+}
+#nav__logo{
+    width: 155px;
+    height: 64px;
+    float:left;
+    padding-left:90px;
+}
+#nav__bar{
+    float:right;
+    padding-right: 122px;
+}
+.nav__bar--select{
+    font-size:22px;
+    font-weight: 600;
+    line-height: 1.36;
+    color:#bbb;
+    text-align:center;
+    text-decoration:none;
+    margin-right: 27px;
+}
+
+#nav__bar--button{
+    width: 154px;
+    height: 59px;
+    border-radius: 10px;
+    border: solid 2px #2699fb;
+    background: none;
+    color:#2699fb;
+}
+
+#wrapper__top h1{
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 0.86;
+    color:#fff;
+    position: absolute;
+    left:90px;
+    bottom:147px;
+}
+#wrapper__top h6{
+    font-size:28px;
+    color:#fff;
+    line-height:2.14;
+    position: absolute;
+    left:90px;
+    bottom:102px;
+}
+
+#vehicle_search{
+    width: 506px;
+  height: 810px;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  padding:33px 39px 14px 47px;
+  position: absolute;
+  top:161px;
+  right:227px;
+}
+#vehicle_search h1{
+    font-size:27px;
+    font-weight: bold;
+  line-height: 1.33;
+  text-align: left;
+  color: black;
+  margin-bottom:29px;
+  position: static;
+}
+.custom-select{
+    margin-bottom:29px;
+}
+.custom-select select, .custom-select select::after{
+    width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #f4fafa;
+  border:none;
+  font-size:18px;
+  color:#7f99a6;
+  padding-left:10px;
+}
+
+.slider {
+    -webkit-appearance: none; 
+   background:linear-gradient(to right, #00def8 0%, #18b3fa 50%, #f4fafa 50%,#f4fafa 100%);
+   outline: none;
+  width: 100%;
+  height: 5.9px;
+  border-radius: 10px;
+  margin-top:30px;
+  margin-bottom:23px;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+.slider:focus{
+    outline:none;
+}
+
+.slider::-webkit-slider-thumb {
+    cursor: pointer;
+    width: 16px;
+  height: 16px;
+  border: solid 2px #ffffff;
+  background-color: #2699fb;
+  border-radius: 50%;
+  margin-top: -6px;
+  }
+
+  #slidecontainer{
+      margin-bottom:34.1px;
+  }
+
+#vehicle_search div p{
+    font-size: 14px;
+  font-weight: bold;
+  margin-top:8.9px;
+  line-height: 1.36;
+  color: #2699fb;
+  cursor: pointer;
+}
+#slidecontainer .slidecontainer_title{
+    color:black !important;
+    font-size:22px;
+    float:left;
+}
+#slidecontainer .slidecontainer_price{
+    color:black !important;
+    font-size:17px;
+    float:right;
+}
+
+#vehicle_options{
+    width:100%;
+    margin-bottom:30px;
+}
+
+.vehicle_option--choose{
+    width: 130px;
+  height: 65px;
+  border-radius: 6px;
+  border: solid 2px #1997ff;
+  background-color: #e3f3ff;
+  float:left;
+  color:#2699fb;
+  font-size: 18px;
+  font-family:SF Pro Display Medium;
+margin-right:15px;
+text-align:center;
+padding-top:10px;
+}
+.vehicle_option--choose_exception{
+margin:0px !important;
+color: #7f99a5;
+border: solid 2px #7f99a5;
+background-color: #fafafa;
+}
+.vehicle_option--choose:hover{
+    cursor: pointer;
+}
+/*Bottom*/
+
+#wrapper__bottom{
+    padding:87px 90px 52px 90px;
+    width: 100%;
+   
+}
+
+#wrapper__bottom #title{
+ font-size: 44px;
+  font-weight: bold;
+  color: #203643;
+  line-height: 1.36;
+}
+
+#wrapper__bottom-slider{
+    height:430px;
+    margin-top:44px;
+    width:100%;
+    position:relative;
+}
+.slider--element{
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: calc((100% - 40px)/3);
+    float:left;
+}
+.slider--element_top{
+    width:100%;
+    height: 266px;
+    background-image: url("../img/bmw.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.slider--element_top p:first-child{
+    width: 137.1px;
+  height: 31.6px;
+  border-radius: 5px;
+  background-color: #24fe83;
+  text-align: center;
+  font-size:16px;
+  color: #203542;
+  padding-top:6.3px;
+  position: absolute;
+  top:12px;
+  right: 14px;
+}
+.slider--element_top p:last-child{
+    width: 138.7px;
+  height: 46.2px;
+  border-radius: 5px;
+  background-color: #203643;
+  color:white;
+  padding-right: 29.1px;
+  padding-left: 19.7px;
+position: absolute;
+left:19px;
+bottom:18px;
+font-family: SF Pro Display Regular;
+}
+
+.slider--element_top p:last-child 
+span:first-child{
+    font-size: 21px;
+    font-weight: bold;
+    height:28px;
+}
+.slider--element_top p:last-child 
+span:last-child{
+    font-size: 9px;
+    height:12px;
+}
+.slider--element_bottom{
+    width:100%;
+}
+.slider--element_bottom p:first-child{
+    font-size: 24px;
+  color: #2699fb;
+  padding-left:21px;
+  padding-top: 11.8px;
+  padding-bottom:11.7px;
+  font-family: SF Pro Display Light;
+  font-weight: 300;
+}
+.slider--element_bottom hr{
+    width: 390px;
+  height: 1px;
+  border: solid 2px #f3f7f8;
+  color:#f3f7f8;
+  margin:auto;
+}
+.slider--element_bottom .element_bottom-desc p{
+    font-family: SP Pro Display Medium;
+    font-size: 20px;
+    color: #7f9aa5;
+    text-align: center;
+    float:left;
+   width: calc((100% - 2px)/3);
+   padding:20px;
+}
+.element_bottom-desc strong
+{
+    color:black; font-family:SP Pro Display Semibold;
+}
+
+#wrapper__bottom button{
+    margin-top:59px;
+   width:700px;
+   height:50px;
+   object-position: center;
+}
+
+
+
+
+.btn{
+    text-align:center;
+    font-size:24px;
+    color:#fff;
+    font-weight: bold;
+    background-image: linear-gradient(92deg, #00def8 8%, #18b3fa 32%, #2699fb 63%);
+    border-radius: 5px;
+    border:none;
+    cursor:pointer;
+}
+.active{    
+    border-bottom: 1px solid white;
+    color:#fff;
+    padding-bottom: 16px;
+}
+
+.border{
+    border-right:2px solid #f3f7f8;
+    border-left:2px solid #f3f7f8;
+}
+.clear{
+    clear: both;
+}
+
+@media only screen and (max-width:1100px){
+    body,html{
+        width: 100%;
+    }
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;       
+    }
+    #wrapper_top{
+        width:100%;
+        order:1;
+    }
+    #nav__logo{
+       position: absolute;
+       top:20px;
+       right:10px;
+
+    }
+    #nav__logo img{
+        width:50px!important;
+    }
+
+    #nav__bar{
+width:100%;   
+text-align: center; 
+padding-left: 20px;    
+    }
+    .nav__bar--select{
+        font-size:18px;
+        line-height: 1.36;
+        color:#bbb;
+        text-decoration:none;
+        margin-right: 27px;
+        display:block;
+        margin: 12px;
+    }
+    .nav__bar--select:hover{
+        color:white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    #nav__bar--button{
+        width: 154px;
+        height: 30px;
+        border-radius: 10px;
+        border: solid 2px #2699fb;
+        background: none;
+        color:#2699fb;
+margin-bottom:10px;
+    }
+    #wrapper__top h1{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 0.86;
+        color:#fff;
+        position: absolute;
+       top:20px!important;
+       left:10px;
+
+    }
+    #wrapper__top h6{
+        font-size:10px;
+        color:#fff;
+        line-height:2.14;
+        position: absolute;
+       top:30px;
+       left:10px;
+    }
+
+    .active{
+        border:none;
+        padding-bottom: 0px;
+    }
+
+
+    #vehicle_search{
+        width:100%;
+        position: static;
+        order:2;
+    }
+    .custom-select select{
+        margin:5px!important;
+        width: calc((100% - 50px)/4);
+    }
+    #vehicle_options{
+        padding-left: calc((100% - 390px)/2);
+    }
+    #wrapper_bottom{
+        width:100%;
+        order:3
+    }
+    .btn{
+        width:80%!important;
+    }
+}
