@@ -1,4 +1,3 @@
-
 $(".owl-carousel").owlCarousel({
     items:5,
     loop:true,
@@ -9,7 +8,6 @@ $(".owl-carousel").owlCarousel({
     autoWidth:true
 });
 var sliders=document.getElementsByClassName("slider");
-
 for(var i=0;i<sliders.length;i++){
     var element=sliders[i];
     element.oninput=function(){
