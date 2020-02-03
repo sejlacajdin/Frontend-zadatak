@@ -14,7 +14,7 @@ for(var i=0;i<sliders.length;i++){
     var element=sliders[i];
     element.oninput=function(){
         
-        this.style.background="linear-gradient(to right, #00def8 20%, #18b3fa "+this.value+"%, #f4fafa "+this.value+"%,#f4fafa 100%)";
+        this.style.background="linear-gradient(to right, #00def8 0%, #18b3fa "+this.value+"%, #f4fafa "+this.value+"%,#f4fafa 100%)";
     }
 }
 
